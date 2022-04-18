@@ -3,11 +3,11 @@ provider "aws"{
 }
 
 resource "aws_s3_bucket" "gnv-terraform" {
-    bucket = "gnv-terraform"
+    bucket = "gnv-terraform-1"
 }
 
-resource "aws_s3_bucket_object" "pets" {
-  source = "/home/venkas/terraform/output/pets.txt"
-  key = "pets.txt"
-  bucket = aws_s3_bucket.gnv-terraform.id
-}
+#resource "aws_s3_bucket_object" "pets" {
+ # source = "/home/venkas/terraform/output/pets.txt"
+  #key = "pets.txt"
+  #bucket = aws_s3_bucket.gnv-terraform.id
+#}
